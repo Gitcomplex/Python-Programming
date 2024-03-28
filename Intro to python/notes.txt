@@ -1,0 +1,61 @@
+INTRODUCTION TO PYTHON 
+
+-> Python is an object-oriented, interpreted language
+-> Its easy to use
+-> runs on many OS's incl. Windows, Mac OSX, Linux
+-> Python supports basic data types such as:  
+    . numbers
+    . strings
+-> More Complex data types such as:
+    . lists
+    . dictionaries
+-> these types can greatly simplify data processing
+-> Python also supports various programming paradigms:
+    . Procedural
+    . Functional
+    . object oriented programming
+-> data in Python is strongly typed (so adding a number and a sting will give an error)
+-> But it is also dynammically typed so you're free from worrying about variable declarations
+
+literal - A value of some type, examples of numeric literals are: 1, 42, 98.04
+        examples of string literals are: "Hello, World!", "Guido van Rossum", "Python"
+
+Function - A named block of code that we can call, by using its name.
+        we can write our own Functions, or we can use Functions that are built into Python such as print.
+
+        In Python, all functions return a value
+
+Argument - A value passed to function, in order to give its value to work with.
+        There may be no Arguments, or there may be 1 or more.
+        
+        Arguments appear in parantheses after the function name.
+
+        If there are no arguments, you still have to type the parantheses.
+
+Calling a Function - Using the function name to execute the function's code
+        When you call a function, you have to provide the Arguments that the function expects
+
+        If it doesn't expect any arguments, don't put anything between the parantheses
+
+Return value - The value that a function returns
+
+Parameter - Also called formal Parameter
+    
+variable - is a name or label which is bound by a value
+
+Python Data types: Python has several built-in data types
+        . numberic
+        . iterator
+        . sequence (which are also iterators)
+        . mapping
+        . class
+        . exception
+
+Python sequence types :
+        -> The String type
+        -> lists
+        -> tuple
+        -> range
+        -> byte and bytearray
+
+        
