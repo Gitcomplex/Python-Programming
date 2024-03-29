@@ -6,5 +6,5 @@ while choosen_exit not in available_gates:
     if choosen_exit == "Quit" or "quit":
         print("***************GAME OVER*****************")
         break
-    
-print("Aren't you glad you got out of there")
+else:
+    print("Aren't you glad you got out of there")
