@@ -10,10 +10,8 @@
 
 # menu()
 choice = "-"
-while True:
-    if choice == "0":
-        break
-    elif choice in ["1", "2", "3", "4", "5"]:
+while choice != "0":
+    if choice in "12345":
         print(f"You choose {choice}")
     else:
         print("Please choose your option from the list below:")
