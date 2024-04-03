@@ -1,3 +1,4 @@
+available_part = ["Computer", "Monitor", "Keyboard", "Mouse", "Mouse mat", "HDMI Cable"]
 current_choice = "-"
 computer_parts = []  # created an empty list
 
@@ -18,13 +19,8 @@ while current_choice != "0":
             computer_parts.append("HDMI Cable")
     else:
         print("Please add options from the list below:")
-        print("1: Computer")
-        print("2: Monitor")
-        print("3: Keyboard")
-        print("4: Mouse")
-        print("5: Mouse mat")
-        print("6: HDMI Cable")
-        print("0: Exit")
+        for part in available_part:
+            print(f"{available_part.index(part)+1}: {part}")
 
     current_choice = input()
 
