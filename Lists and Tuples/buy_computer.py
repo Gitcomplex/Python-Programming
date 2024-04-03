@@ -1,22 +1,30 @@
-available_part = ["Computer", "Monitor", "Keyboard", "Mouse", "Mouse mat", "HDMI Cable"]
+available_part = [
+    "Computer",
+    "Monitor",
+    "Keyboard",
+    "Mouse",
+    "Mouse mat",
+    "HDMI Cable",
+    "Webcam",
+    "Microphone",
+]
+
+# valid_choices = [str(i) for i in range(1, len(available_part) + 1)] -> list comprehension
+valid_choices = []
+for i in range(1, len(available_part) + 1):
+    valid_choices.append(str(i))
+print(valid_choices)
+
 current_choice = "-"
 computer_parts = []  # created an empty list
 
 while current_choice != "0":
-    if current_choice in "123456":
+    if current_choice in valid_choices:
         print(f"Adding {current_choice}")
-        if current_choice == "1":
-            computer_parts.append("Computer")
-        elif current_choice == "2":
-            computer_parts.append("Monitor")
-        elif current_choice == "3":
-            computer_parts.append("Keyboard")
-        elif current_choice == "4":
-            computer_parts.append("Mouse")
-        elif current_choice == "5":
-            computer_parts.append("Mouse mat")
-        elif current_choice == "6":
-            computer_parts.append("HDMI Cable")
+        index = int(current_choice) - 1
+        chosen_part = available_part[index]
+        computer_parts.append(chosen_part)
+
     else:
         print("Please add options from the list below:")
         for number, part in enumerate(available_part):
