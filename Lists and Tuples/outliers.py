@@ -27,8 +27,14 @@ data = [
 min_valid = 100
 max_valid = 200
 
-for index, value in enumerate(data):
-    if (value < min_valid) or (value > max_valid):
-        del data[index]
+stop = 0
 
+for index, value in enumerate(data):
+    if value >= min_valid:
+        stop = index
+        break
+
+
+print(stop)
+del data[:stop]
 print(data)
