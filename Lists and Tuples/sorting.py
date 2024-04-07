@@ -23,3 +23,6 @@ print(missing_letter)
 names = ["Graham", "John", "terry", "eric", "Terry", "michael"]
 names.sort(key=str.casefold)
 print(names)
+
+
+            
