@@ -53,17 +53,17 @@ albums = [
 # for name, artist, year, songs in albums:
 #     print(f"Album: {name}, Artist: {artist}, Year: {year}, Songs: {songs}")
 
-print()
+# print()
 
-album = albums[2]
-print(album)
+# album = albums[2]
+# print(album)
 
-songs = album[3]
-print(songs)
+# songs = album[3]
+# print(songs)
 
-song = songs[1]
-print(song)
+# song = songs[1]
+# print(song)
 
-print(song[1])
+# print(song[1])
 
-print(albums[3][3][2][1])
+# print(albums[3][3][2][1])
