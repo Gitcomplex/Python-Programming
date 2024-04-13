@@ -24,5 +24,12 @@ generated_list = ["9"," ",
 values = "".join(generated_list)
 print(values)
 
-values_split = values.split()
-print(values_split)
+values_list = values.split()
+print(values_list)
+print(id(values_list))
+
+for i in range(len(values_list)):
+    values_list[i] = int(values_list[i])
+    print(type(values_list[i]))
+
+print(id(values_list))
