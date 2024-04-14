@@ -1,6 +1,7 @@
 from neested_data import albums
 
 SONGS_LIST_INDEX = 3
+SONG_TITLE_INDEX = 1
 
 while True:
     print("Please choose your album (invalid choice exists):")
@@ -11,6 +12,14 @@ while True:
         songs_list = albums[choice - 1][SONGS_LIST_INDEX]
     else:
         break
+    print("Please choose your song:")
+    for index, (track_number, song) in enumerate(songs_list):
+        print(f"{index + 1}: {song}")
+    song_choice = int(input())
+    if 1 <= song_choice <= len(songs_list):
+        title = songs_list[song_choice - 1][SONG_TITLE_INDEX]
+    else:
+        break
 
-    print(albums[choice - 1])
-    print(songs_list)
+    print(f"Playing {title}")
+    print("=" * 40)
